@@ -6,7 +6,6 @@ import PhoneCard from "../../components/PhoneCard/PhoneCard";
 import {
   MDBContainer,
   MDBRow,
-  MDBCol,
 } from "mdb-react-ui-kit";
 
 function HomePage() {
@@ -47,7 +46,7 @@ function HomePage() {
     <section>
       <h1>Welcome to the Phone Cave</h1>
 
-      {isLoading ? (<Loading></Loading>) : (
+      {isLoading ? (<Loading />) : (
          <MDBContainer fluid className="my-5 text-center">
           <MDBRow>
         {phones.map((phone, index) => {
